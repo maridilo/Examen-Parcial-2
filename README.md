@@ -314,3 +314,27 @@ C-3PO añade:
 > - Para cifrado rápido y de alto rendimiento entre partes que ya comparten una clave, usa **simétrico**.  
 > - Para comunicaciones con nuevos interlocutores o para firmar/autenticar mensajes, usa **asimétrico** y firmas digitales.  
 > - Al gestionar remotamente routers o servidores, **SSH** (cifrado asimétrico + simétrico) es imprescindible frente a Telnet.  
+
+---
+
+# Misión 6: Red Troncal de la Alianza
+
+## Descripción
+Despliegue de una red troncal interplanetaria que conecta tres ubicaciones (Hoth, HomeOne y Endor) usando OSPF sobre enlaces punto a punto. Cada sitio dispone de su propia LAN y los routers intercambian rutas automáticamente en el área 0.
+## Entregables
+
+1. **Archivo Packet Tracer**  
+   - Mision6.pkt
+
+2. **Diagrama de la red**  
+![Diagrama Red Troncal](imagen_2025-05-13_191948939.png)
+
+3. **Tabla resumen de subnetting**
+
+| Segmento               | Red          | Máscara            | Rango de Hosts               | Broadcast   |
+|------------------------|--------------|--------------------|------------------------------|-------------|
+| **Hoth-LAN**           | 10.0.1.0/26  | 255.255.255.192    | 10.0.1.1 – 10.0.1.62         | 10.0.1.63   |
+| **HomeOne-LAN**        | 10.0.1.64/27 | 255.255.255.224    | 10.0.1.65 – 10.0.1.94        | 10.0.1.95   |
+| **Endor-LAN**          | 10.0.1.96/27 | 255.255.255.224    | 10.0.1.97 – 10.0.1.126       | 10.0.1.127  |
+| **Enlace Hoth→HomeOne**| 10.0.0.0/30  | 255.255.255.252    | 10.0.0.1 – 10.0.0.2          | 10.0.0.3    |
+| **Enlace HomeOne→Endor**| 10.0.0.4/30 | 255.255.255.252    | 10.0.0.5 – 10.0.0.6          | 10.0.0.7    |
