@@ -338,3 +338,7 @@ Despliegue de una red troncal interplanetaria que conecta tres ubicaciones (Hoth
 | **Endor-LAN**          | 10.0.1.96/27 | 255.255.255.224    | 10.0.1.97 – 10.0.1.126       | 10.0.1.127  |
 | **Enlace Hoth→HomeOne**| 10.0.0.0/30  | 255.255.255.252    | 10.0.0.1 – 10.0.0.2          | 10.0.0.3    |
 | **Enlace HomeOne→Endor**| 10.0.0.4/30 | 255.255.255.252    | 10.0.0.5 – 10.0.0.6          | 10.0.0.7    |
+
+## Misión 7: La Baliza Secreta de Coruscant – Comunicaciones seguras y servicios en la red rebelde
+
+![Diagrama Red Troncal](imagen_2025-05-13_195114579.png)
